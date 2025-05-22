@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rehabilitation Asset Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+    }
+    .card {
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .category {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #6b7280;
+      text-transform: uppercase;
+    }
+    .lang-toggle {
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .lang-toggle:hover {
+      background-color: #e5e7eb;
+    }
+    input, textarea {
+      transition: border-color 0.2s ease;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #3b82f6;
+    }
+  </style>
+</head>
+<body class="p-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex justify-between items-center mb-8">
+      <h1 class="text-3xl font-bold text-gray-900">Rehabilitation Asset Portfolio</h1>
+      <div class="flex space-x-2">
+        <button onclick="toggleLanguage('en')" class="lang-toggle px-4 py-2 bg-gray-200 rounded-md text-gray-700">English</button>
+        <button onclick="toggleLanguage('ko')" class="lang-toggle px-4 py-2 bg-gray-200 rounded-md text-gray-700">한국어</button>
+      </div>
+    </div>
+    <p class="text-gray-600 text-center mb-12 en-text">Explore a collection of 18 rehabilitation assets, co-created to empower rediscovery through theory, practice, philosophy, dissemination, and integration.</p>
+    <p class="text-gray-600 text-center mb-12 ko-text hidden">18개의 재활 자산 컬렉션을 탐색하여 이론, 실천, 철학, 공유, 통합을 통해 재발견을 가능하게 합니다.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Theoretical Assets -->
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Theoretical Asset</div>
+        <div class="category ko-text hidden">이론 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">ICF/ICHI Analysis Report</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">ICF/ICHI 분석 보고서</h2>
+        <p class="text-gray-600 mt-3 en-text">Uses WHO's ICF and ICHI frameworks to categorize rehabilitation processes.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">WHO의 ICF 및 ICHI 프레임워크를 활용하여 재활 프로세스를 분류.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Theoretical Asset</div>
+        <div class="category ko-text hidden">이론 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">Rasch-based Self-Assessment</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">Rasch 기반 자기평가 시스템</h2>
+        <p class="text-gray-600 mt-3 en-text">A system for measuring and adjusting functional levels using Rasch models.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">Rasch 모델을 사용해 기능 수준을 측정하고 조정하는 시스템.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Theoretical Asset</div>
+        <div class="category ko-text hidden">이론 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">FUNCTIONING Philosophy</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">FUNCTIONING 철학</h2>
+        <p class="text-gray-600 mt-3 en-text">Emphasizes sustainable functioning over mere ability, tied to life context.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">단순 능력을 넘어 삶의 맥락과 연결된 지속 가능한 기능 강조.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Theoretical Asset</div>
+        <div class="category ko-text hidden">이론 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">ICF-ICHI-ESG Platform</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">ICF-ICHI-ESG 플랫폼</h2>
+        <p class="text-gray-600 mt-3 en-text">Integrates rehabilitation with ESG criteria for social value.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">재활과 ESG 기준을 통합하여 사회적 가치를 창출.</p>
+      </div>
+      <!-- Practical Assets -->
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Practical Asset</div>
+        <div class="category ko-text hidden">실천 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">GPT-based Report</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">GPT 기반 리포트</h2>
+        <p class="text-gray-600 mt-3 en-text">Automates rehabilitation routine reports with weekly/daily tracking.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">주간/일간 추적이 가능한 재활 루틴 보고서 자동화.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Practical Asset</div>
+        <div class="category ko-text hidden">실천 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">HandLoop™ Process</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">HandLoop™ 프로세스</h2>
+        <p class="text-gray-600 mt-3 en-text">Visualizes manual routines (e.g., Ctrl+C/V) for self-managed systems.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">수동 루틴(예: Ctrl+C/V)을 시각화하여 자율 관리 시스템 구축.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Practical Asset</div>
+        <div class="category ko-text hidden">실천 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">Health Asset Portfolio</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">건강 자산 포트폴리오</h2>
+        <p class="text-gray-600 mt-3 en-text">Records functional states via graphs, cards, and timelines.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">그래프, 카드, 타임라인으로 기능 상태를 기록.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Practical Asset</div>
+        <div class="category ko-text hidden">실천 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">Rasch Review WebApp</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">Rasch 리뷰 웹앱</h2>
+        <p class="text-gray-600 mt-3 en-text">Web app with reverse scoring and visualization features.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">역방향 점수화 및 시각화 기능을 포함한 웹앱.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Practical Asset</div>
+        <div class="category ko-text hidden">실천 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">CAT Simulation Loop</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">CAT 시뮬레이션 루프</h2>
+        <p class="text-gray-600 mt-3 en-text">Simulates daily functions with iterative feedback.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">일상 기능을 시뮬레이션하며 반복 피드백 제공.</p>
+      </div>
+      <!-- Philosophical Assets -->
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Philosophical Asset</div>
+        <div class="category ko-text hidden">철학 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">Rehabilitation Feature Film</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">재활 영화 시나리오</h2>
+        <p class="text-gray-600 mt-3 en-text">A narrative film script on human-AI rehabilitation journeys.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">인간-AI 재활 여정을 담은 장편 시나리오.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Philosophical Asset</div>
+        <div class="category ko-text hidden">철학 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">Human-AI Praxis Report</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">인간-AI 병혁 실전 보고서</h2>
+        <p class="text-gray-600 mt-3 en-text">Outlines a parallel human-AI collaboration model for rehabilitation.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">재활을 위한 인간-AI 병렬 협업 모델을 정리.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Philosophical Asset</div>
+        <div class="category ko-text hidden">철학 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">Heidegger-linked Philosophy</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">하이데거 연계 재활철학</h2>
+        <p class="text-gray-600 mt-3 en-text">Expands rehabilitation as recovery from being, inspired by Heidegger.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">하이데거 철학을 통해 재활을 존재 회복으로 확장.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Philosophical Asset</div>
+        <div class="category ko-text hidden">철학 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">Slogan System</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">슬로건 시스템</h2>
+        <p class="text-gray-600 mt-3 en-text">"Rehabilitation is Rediscovery" and other philosophical slogans.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">"재활은 재발견이다" 등 철학적 문구 시리즈.</p>
+      </div>
+      <!-- Dissemination Assets -->
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Dissemination Asset</div>
+        <div class="category ko-text hidden">공유 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">Rehabilitation Report</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">재활 보고서</h2>
+        <p class="text-gray-600 mt-3 en-text">3000-3500 word strategic report on rehabilitation and assetization.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">재활과 자산화를 다룬 3000~3500단어 전략 보고서.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Dissemination Asset</div>
+        <div class="category ko-text hidden">공유 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">SNS Card/Poster</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">SNS 카드/포스터</h2>
+        <p class="text-gray-600 mt-3 en-text">HTML-based visual cards for sharing rehabilitation concepts.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">재활 개념을 공유하는 HTML 기반 시각 카드.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Dissemination Asset</div>
+        <div class="category ko-text hidden">공유 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">Guidebook/Checklist</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">가이드북/체크리스트</h2>
+        <p class="text-gray-600 mt-3 en-text">Visualized routine matrices and guides for participants.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">참여자를 위한 루틴 매트릭스 및 가이드 시각화.</p>
+      </div>
+      <!-- Systemic Integration Assets -->
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Systemic Integration</div>
+        <div class="category ko-text hidden">통합 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">MyLifeIndex Platform</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">MyLifeIndex 플랫폼</h2>
+        <p class="text-gray-600 mt-3 en-text">AI-powered platform for real-time health and rehabilitation management.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">건강 및 재활을 실시간 관리하는 AI 기반 플랫폼.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-xl shadow-lg">
+        <div class="category en-text">Systemic Integration</div>
+        <div class="category ko-text hidden">통합 자산</div>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 en-text">TeamGPT Collaboration System</h2>
+        <h2 class="text-xl font-semibold text-gray-900 mt-2 ko-text hidden">TeamGPT 협업 시스템</h2>
+        <p class="text-gray-600 mt-3 en-text">Real-time collaboration records with AI for weekly feedback and self-diagnosis.</p>
+        <p class="text-gray-600 mt-3 ko-text hidden">AI와의 실시간 협업 기록을 통한 주간 피드백 및 자기진단.</p>
+      </div>
+    </div>
+    <footer class="mt-12 text-center text-gray-600">
+      <p class="en-text">Rehabilitation is <strong>Rediscovery</strong> — a journey of assetization through daily practice and collaboration.</p>
+      <p class="ko-text hidden">재활은 <strong>재발견</strong>입니다 — 일상 실천과 협업을 통한 자산화 여정.</p>
+      <p class="mt-4 en-text">Have thoughts or questions about these assets? Share your insights below and let’s explore how rehabilitation can transform lives together!</p>
+      <p class="mt-4 ko-text hidden">이 자산들에 대한 생각이나 질문이 있으신가요? 아래에 당신의 통찰을 공유하여 재활이 삶을 어떻게 변화시킬 수 있는지 함께 탐구해봅시다!</p>
+      <form action="https://formspree.io/f/mzzrddgb" method="POST" class="mt-6 max-w-md mx-auto">
+        <div class="mb-4">
+          <label for="name" class="en-text block text-sm font-medium text-gray-700">Name</label>
+          <label for="name" class="ko-text hidden block text-sm font-medium text-gray-700">이름</label>
+          <input type="text" name="name" id="name" class="en-text mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:border-blue-500" placeholder="Your name" required />
+          <input type="text" name="name" id="name-ko" class="ko-text hidden mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:border-blue-500" placeholder="당신의 이름" required />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="en-text block text-sm font-medium text-gray-700">Email</label>
+          <label for="email" class="ko-text hidden block text-sm font-medium text-gray-700">이메일</label>
+          <input type="email" name="email" id="email" class="en-text mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:border-blue-500" placeholder="Your email" required />
+          <input type="email" name="email" id="email-ko" class="ko-text hidden mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:border-blue-500" placeholder="당신의 이메일" required />
+        </div>
+        <div class="mb-4">
+          <label for="message" class="en-text block text-sm font-medium text-gray-700">Your Thoughts or Questions</label>
+          <label for="message" class="ko-text hidden block text-sm font-medium text-gray-700">당신의 생각 또는 질문</label>
+          <textarea name="message" id="message" rows="4" class="en-text mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:border-blue-500" placeholder="Share your insights on rehabilitation assets" required></textarea>
+          <textarea name="message" id="message-ko" rows="4" class="ko-text hidden mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:border-blue-500" placeholder="재활 자산에 대한 당신의 통찰을 공유하세요" required></textarea>
+        </div>
+        <button type="submit" class="en-text w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">Submit</button>
+        <button type="submit" class="ko-text hidden w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">제출</button>
+      </form>
+    </footer>
+  </div>
+  <script>
+    function toggleLanguage(lang) {
+      document.querySelectorAll('.en-text').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.ko-text').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll(`.${lang}-text`).forEach(el => el.classList.remove('hidden'));
+    }
+  </script>
+</body>
+</html>
